@@ -270,7 +270,7 @@ ggplot(LA) + geom_sf(fill = "white")+ xlim(-118.75,-118.1) + ylim(33.6,34.4) + g
 g<-ggplot(LA) + geom_sf()+ xlim(-118.75,-118.1) + ylim(33.6,34.4) + geom_point(data = display,mapping = aes(x = avglong,y = avglat,color = crm), shape = 20, stroke = F) + theme(legend.position = "none")
 
 
-# try to implement it through plotlu and then work on UI 
+# try to implement it through plotly and then work on UI 
 
 
 # Experiment
