@@ -11,7 +11,7 @@ library(naivebayes)
 
 
 # Data Import 
-crimeLA <- read_csv("C:/Users/mtey4/Desktop/LACRIMEClassif/crime_in_la.csv")
+crimeLA <- read_csv("crime_in_la.csv")
 
 
 # Train and Test Data
@@ -249,7 +249,7 @@ my.sf.point <- st_as_sf(x = coord_analysis,
 coord_analysis <- inner_join(coord_analysis,analysis)
 
 
-LA <- read.sf("C://Users//mtey4//Desktop//LACRIMEClassif//City_Boundaries.shp")
+LA <- read.sf("City_Boundaries.shp")
 LA <- LA %>% 
   sf::st_coordinates() %>%
   as_tibble() %>%
